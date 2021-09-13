@@ -31,5 +31,3 @@ macro_rules! while_mut{
         }
     }
 }
-
-fn main() {}
