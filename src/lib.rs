@@ -1,9 +1,7 @@
 /// Allows you create a cycle with mutable conditions.
 /// # Arguments list:
-/// - var: step-variable
-/// - cond: mutable condition (for example, array length)
-/// - exp: expression breaking the cycle (for example, closure: |a,b| a==b or std::cmp::PartialEq::eq)
-/// - code: following code
+/// - cond: mutable condition (for example, `i==array.len()`)
+/// - code: the following code
 /// # Examples
 /// ```
 ///  fn main() {
