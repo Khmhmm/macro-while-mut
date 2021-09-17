@@ -11,7 +11,7 @@
 ///    
 ///    let mut i = 0;
 ///    while_mut!{
-///        i, v.len(), |a:&usize,b:&usize| a==b,
+///        i<v.len(),
 ///        {
 ///            v.remove(0);
 ///            println!("{} {} {}", v[0], v.len(), i);
@@ -22,11 +22,9 @@
 /// ```
 #[macro_export]
 macro_rules! while_mut{
-    {$var: ident, $cond: expr, $exp: expr, $code: block} => {
-        let mut c = $cond;
+    {$cond: expr, $code: block} => {
         loop {
-            if $exp(&$var,&c) { break; }
-            c = $cond;
+            if !($cond) { break; }
             $code
         }
     }
