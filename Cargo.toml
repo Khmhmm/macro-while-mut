@@ -1,6 +1,6 @@
 [package]
 name = "macro-while-mut"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["khmhmm <khmhmm@ya.ru>"]
 edition = "2018"
 description = "Macro that allows create while-cycle with mutable condition state"
