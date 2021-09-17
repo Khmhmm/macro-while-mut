@@ -1,6 +1,6 @@
 /// Allows you create a cycle with mutable conditions.
 /// # Arguments list:
-/// - cond: mutable condition (for example, `i==array.len()`)
+/// - cond: mutable condition (for example, `i!=array.len()`)
 /// - code: the following code
 /// # Examples
 /// ```
