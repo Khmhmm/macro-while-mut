@@ -3,6 +3,8 @@ name = "macro-while-mut"
 version = "0.1.0"
 authors = ["khmhmm <khmhmm@ya.ru>"]
 edition = "2018"
+description = "Macro that allows create while-cycle with mutable condition state"
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
